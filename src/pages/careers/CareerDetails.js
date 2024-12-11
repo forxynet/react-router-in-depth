@@ -27,7 +27,7 @@ export const careerDetailsLoader = async ({ params }) => {
   //   throw Error('Could not find that career');
   // }
   // return res.json()
-  // data.filter(item => item.name.includes(search));
+  
   const detailData = careersData.find(data => data.id === parseInt(id))
 
   return detailData;
