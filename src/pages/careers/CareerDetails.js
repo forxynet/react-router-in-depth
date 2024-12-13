@@ -2,7 +2,6 @@ import { useLoaderData } from 'react-router-dom'
 import { careersData } from '../../data/data';
 
 export default function CareerDetails() {
- // const { id } = useParams()
   const career = useLoaderData()
 
   return (

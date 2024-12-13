@@ -14,6 +14,9 @@ import NotFound from './pages/NotFound'
 import Careers, { careersLoader } from './pages/careers/Careers'
 import CareerDetails, {careerDetailsLoader} from './pages/careers/CareerDetails'
 import CareersError from './pages/careers/CareersError'
+import Chapters, {chaptersLoader} from './pages/chapters/Chapters'
+import Editions, { editionsDetailsLoader } from './pages/chapters/Editions'
+import ChaptersError from './pages/chapters/ChaptersError'
 
 // layouts
 import RootLayout from './layouts/RootLayout'
@@ -30,6 +33,19 @@ const router = createBrowserRouter(
         <Route path="faq" element={<Faq />} />
         <Route path="contact" element={<Contact/>} action={contactAction}/>
       </Route>
+      <Route     
+      index   
+        path="chapters"
+        element={<Chapters />}
+        loader={chaptersLoader}
+        errorElement={<ChaptersError />}
+      />
+      <Route
+        path='/chapters/editions/:id'
+        element={<Editions />}
+        loader={editionsDetailsLoader}
+        errorElement={<ChaptersError />}
+      />
       <Route path="careers" element={<CareersLayout />} errorElement={<CareersError />}>
         <Route
           index
