@@ -1,5 +1,5 @@
 import { useLoaderData } from 'react-router-dom'
-import { editionsData } from '../../data/editions/tr'
+import { editionsData } from '../../data/editions/en'
 
 export default function Editions() {
   const edition = useLoaderData()

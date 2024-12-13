@@ -1,5 +1,5 @@
 import { Link, useLoaderData } from 'react-router-dom'
-import { chaptersData } from '../../data/chapters/tr'
+import { chaptersData } from '../../data/chapters/en'
 
 export default function Chapters() {
   const chapters = useLoaderData();
