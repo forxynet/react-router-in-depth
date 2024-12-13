@@ -10,7 +10,7 @@ export default function Editions() {
     <div className='career-details'>
       {edition.map(data => (      
         <>
-          <p>{`[${data.verse}] ${data.text}`}</p>
+          <p>{`[${data.verse}] ${data.text}.`}</p>
         </>
       ))
       }
